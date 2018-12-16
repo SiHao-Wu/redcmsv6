@@ -25,7 +25,7 @@ public abstract class Action extends HttpServlet
 		req.setCharacterEncoding("UTF-8");
 		String method= null!=req.getParameter("action")?req.getParameter("action"):"index";
 		Class[]param=new Class[] {HttpServletRequest.class,HttpServletResponse.class};
-//		System.out.println(method);
+	 
 		Class clazz=this.getClass();
 		try {
 			Method m=clazz.getDeclaredMethod(method, new Class[] {});
@@ -89,8 +89,7 @@ public abstract class Action extends HttpServlet
 					}else if(types==Long.class||types==long.class||types==Long.TYPE){
 						if(paramv.matches("\\d+"))
 						f.set(bean, Long.parseLong(paramv));
-					}
-					else if(types==Date.class)
+					}else if(types==Date.class)
 					{
 						if(paramv.matches("\\d{4}[-]\\d{2}[-]\\d{2}[ ]\\d{2}[:]\\d{2}[:]\\d{2}"))
 						{

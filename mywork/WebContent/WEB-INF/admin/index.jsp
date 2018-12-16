@@ -76,9 +76,6 @@
                                 <a class="J_menuItem" href="admin/channel">增加栏目</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="admin/channel/channelList">管理栏目</a>
-                            </li>
-                            <li>
                                 <a class="J_menuItem" href="admin/channel/pubAllchannel?pageSize=20">生成静态</a>
                             </li>
                         </ul>

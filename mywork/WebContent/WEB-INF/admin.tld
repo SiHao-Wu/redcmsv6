@@ -55,7 +55,13 @@
         <body-content>empty</body-content>
     </tag>
   
-    
+        <!-- 后台左测，栏目导航 -->
+  <tag>
+     <description>channel tree menu</description>
+       <name>channelTree</name>
+       <tag-class>com.redcms.admin.tag.ChannelLeftMenuTag</tag-class>
+       <body-content>empty</body-content>
+    </tag> 
    
     <!-- 栏目下拉框，带二级栏目的 -->
     <!--    <tag>
